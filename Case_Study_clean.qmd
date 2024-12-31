@@ -4,11 +4,6 @@ format: html
 editor:
 ---
 
-## Case Study of Bellabeat Smart device data
-
-## by Anna Ray
-
-### Introduction and Business task
 
 This is my Case study using on the Bellabeat fitbit fitness tracker dataset using R. Here i will preform real-world task of a junior data analyst.
 
@@ -249,11 +244,6 @@ hourlysteps %>% select(
 
 Average Steps is 320.2 steps which when I take the recommended steps of 10,000 / 24(for hours in a day) 417 steps per hour is the average they should be meeting.
 
-#### Cleaning
-
-I will start cleaning by changing names and date formats.
-
-I will also make a backup of each dataframes and make my changes on the new datasets
 
 ```{r}
 
@@ -403,9 +393,7 @@ Daily2 <- Daily2 %>% mutate(
 colnames(Daily2)
 ```
 
-### Plots
 
-Now that I have cleaned the data I will plot the data
 
 ```{r}
 Daily2 %>% ggplot(
@@ -420,7 +408,7 @@ Daily2 %>% ggplot(
 
 ```
 
--   This plot suggests that user's who take more steps tend to spend less time sitting. This negative correlation is visually represented by the downward-sloping trend line.
+
 
     ```{r}
     Sleep2 %>% ggplot(
@@ -597,16 +585,6 @@ UserActivites %>% ggplot(aes(
 )) + geom_col()
 ```
 
-### 
+ 
 
-### Conclusions
 
--   If we can send a notice during long periods of Sedentary activities we could encourage users to walk more.
-
--   We could use our sleep data to get our users into a healthy sleep patterns and for users who have trouble falling asleep we could offer meditation music or a short video to help customers relax and de-stress before bed
-
--   Using the data we can see when and what day users are most likely to work out. Depending on jobs they may already walk a lot. Users who don't meet there weekly goals can get a notification to encourage more daily steps
-
--   If users are near each other they could share their goals with other members or have weekly gatherings to walk together.
-
--   
